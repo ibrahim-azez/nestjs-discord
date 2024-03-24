@@ -1,0 +1,11 @@
+{
+  "**/*.{md,json,yml}": [
+    "prettier  --config .prettierrc --ignore-path .prettierignore --check",
+    "cspell lint -c ./cspell.json --no-must-find-files"
+  ],
+  "**/*.ts": [
+    "pnpm run lint:check",
+    "prettier  --config .prettierrc --ignore-path .prettierignore --check",
+    "cspell lint -c ./cspell.json --no-must-find-files"
+  ]
+}

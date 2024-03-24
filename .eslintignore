@@ -1,0 +1,13 @@
+.vscode
+.git
+coverage
+.fttemplates
+src/assets/i18n
+/dist
+/data
+mongodb.key
+node_modules
+/.cspell
+/.husky
+/src/app/generated
+/pnpm-lock.yaml

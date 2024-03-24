@@ -1,0 +1,24 @@
+{
+  "caseSensitive": true,
+  "dictionaries": ["english", "programming"],
+  "ignorePaths": [
+    "node_modules/**",
+    "dist/**",
+    "coverage/**",
+    ".vscode/**",
+    ".husky/**",
+    "pnpm-lock.yaml"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "english",
+      "path": "./.cspell/english.txt",
+      "addWords": true
+    },
+    {
+      "name": "programming",
+      "path": "./.cspell/programming.txt",
+      "addWords": true
+    }
+  ]
+}

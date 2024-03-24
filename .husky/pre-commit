@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+staged_files=$(git diff --diff-filter=d --name-only --cached)
+
+pnpm run lint-staged --config .lintstagedrc.json
+
+pnpm run tsc:check
+
+pnpm run circular:deps:check
+
+git add $staged_files
